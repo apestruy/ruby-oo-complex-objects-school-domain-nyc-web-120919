@@ -4,7 +4,9 @@ class School
     @roster = roster
   end 
    attr_reader :roster
-   @roster = {}
   
+  def roster 
+   @roster = {}
+  end 
   
 end 
