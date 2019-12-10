@@ -17,9 +17,8 @@ class School
   end 
   
   def sort 
-    @roster.each do |memo, (key, value)|
-      memo[key] = value.sort
-      memo
+    @roster.each do |key, value|
+      @roster[key] = value.sort
   end 
   end 
 end 
