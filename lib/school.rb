@@ -6,8 +6,9 @@ class School
    attr_reader :roster
 
   def add_student(name, grade)
-    @roster = @roster[grade]
+    if @roster[grade]
     @roster[grade] << name
+  else @roster[grade][name]
   end 
   
 end 
