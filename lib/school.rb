@@ -8,6 +8,7 @@ class School
   def add_student(name, grade)
     @roster = @roster[:grade]
     @roster[:grade] << name 
+    @roster
   end 
   
 end 
