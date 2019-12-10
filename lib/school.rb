@@ -17,6 +17,6 @@ class School
   end 
   
   def sort 
-    sorted_array = @roster.sort 
+    @roster[grade] = name.sort 
   end 
 end 
